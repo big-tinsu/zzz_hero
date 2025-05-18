@@ -1,26 +1,31 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <HeroSection />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeroSection from './components/hero.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    HeroSection,
   },
 }
 </script>
 
 <style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 h1,
 h2,
@@ -30,6 +35,7 @@ h5,
 h6 {
   font-family: 'Instrument Serif', serif;
   font-weight: 400;
+  margin: 0;
 }
 
 body {
