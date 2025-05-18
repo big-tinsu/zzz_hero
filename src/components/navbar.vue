@@ -77,5 +77,8 @@ export default {
       cursor: pointer;
     }
   }
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 </style>

@@ -39,6 +39,10 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (max-width: 1024px) {
+    color: #ffffff;
+  }
 }
 
 #app::after {
