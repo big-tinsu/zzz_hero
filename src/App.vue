@@ -30,12 +30,27 @@ body {
 }
 
 #app {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-image: url('@/assets/images/hurucan.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+#app::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('@/assets/images/screen.png');
+  opacity: 0.7;
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+}
+
 h1,
 h2,
 h3,
@@ -48,8 +63,8 @@ h6 {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', serif;
+  font-weight: 300;
   line-height: 1.5;
 }
 </style>
