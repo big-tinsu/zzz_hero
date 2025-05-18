@@ -1,13 +1,22 @@
 <template>
+  <NavBar
+    :links="[
+      { id: 1, name: 'Home' },
+      { id: 2, name: 'About' },
+      { id: 3, name: 'Cases' },
+      { id: 4, name: 'Contact' },
+    ]"
+  />
   <HeroSection />
 </template>
 
 <script>
 import HeroSection from './components/hero.vue'
-
+import NavBar from './components/navbar.vue'
 export default {
   name: 'App',
   components: {
+    NavBar,
     HeroSection,
   },
 }
